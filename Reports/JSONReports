@@ -1,0 +1,243 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-12T11:51:31.210Z",
+        "line": 16,
+        "name": "Admin can add new employee record",
+        "description": "",
+        "id": "creates-activtiy-record;admin-can-add-new-employee-record;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1391415100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user creates an activity with 4 NewsActivity 2021-08-10T23:31:20.367Z true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 30
+                },
+                {
+                  "val": "NewsActivity",
+                  "offset": 32
+                },
+                {
+                  "val": "2021-08-10T23:31:20.367Z",
+                  "offset": 45
+                },
+                {
+                  "val": "true",
+                  "offset": 70
+                }
+              ],
+              "location": "stepDefinitions.CreateActivity_steps.user_creates_an_activity(int,java.lang.String,java.lang.String,java.lang.Boolean)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1496281800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user performs a POST call",
+            "match": {
+              "location": "stepDefinitions.CreateActivity_steps.user_performs_a_post_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3990100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.Generic_Assertion.status_code_is_returned(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 575037500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"\u003ckeys\u003e\" has expected values",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ckeys\u003e\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.CreateActivity_steps.has_expected_values(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ]
+              },
+              {
+                "cells": [
+                  "title"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creates activtiy record",
+    "description": "",
+    "id": "creates-activtiy-record",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CreateActivity.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-12T11:51:34.774Z",
+        "line": 14,
+        "name": "Admin can get details for queried employee",
+        "description": "",
+        "id": "verifies-if-employee/employee(s)-details-are-retreived-sucessfully;admin-can-get-details-for-queried-employee;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7052100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "admin uses GetSingleEmployee 25 endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.GetActivities_steps.admin_uses_get_single_employee_endpoint(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 186624500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "admin retreives single employee details",
+            "match": {
+              "location": "stepDefinitions.GetActivities_steps.admin_retreives_single_employee_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.Generic_Assertion.status_code_is_returned(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T11:51:34.975Z",
+        "line": 15,
+        "name": "Admin can get details for queried employee",
+        "description": "",
+        "id": "verifies-if-employee/employee(s)-details-are-retreived-sucessfully;admin-can-get-details-for-queried-employee;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "admin uses GetSingleEmployee 30 endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.GetActivities_steps.admin_uses_get_single_employee_endpoint(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 168515600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "admin retreives single employee details",
+            "match": {
+              "location": "stepDefinitions.GetActivities_steps.admin_retreives_single_employee_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1977700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.Generic_Assertion.status_code_is_returned(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifies if employee/employee(s) details are retreived sucessfully",
+    "description": "",
+    "id": "verifies-if-employee/employee(s)-details-are-retreived-sucessfully",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GetActivities.feature",
+    "tags": []
+  }
+]
